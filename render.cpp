@@ -16,7 +16,7 @@
 typedef unsigned int UINT32;
 
 //=====================================================================
-// 数学库：此部分应该不用详解，熟悉 D3D 矩阵变换即可
+// 3D数学库：包括向量计算、矩阵变换
 //=====================================================================
 typedef struct {
 	float m[4][4];
@@ -955,8 +955,6 @@ int main(void)
 			alpha += 0.01f;
 		if (screen_keys[VK_RIGHT])
 			alpha -= 0.01f;
-		if (screen_keys[VK_MBUTTON])
-			int a = 0;
 
 		if (screen_keys[VK_SPACE]) {
 			if (kbhit == 0) {
